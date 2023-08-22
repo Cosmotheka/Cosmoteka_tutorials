@@ -1,84 +1,16 @@
-tracers:
-  SDSS__QSO0:
-    SDSS_name: 'QSO_0'
-    num_z_bins: 50
-    nside_mask: 512
-    nside_nl_threshold: 4096
-    lmin_nl_from_data: 2000
-    data_catalogs:
-      - '../../cataloges/eBOSS/eBOSS_QSO_clustering_data-NGC-vDR16.fits'
-      - '../../cataloges/eBOSS/eBOSS_QSO_clustering_data-SGC-vDR16.fits'
-    random_catalogs:
-      - '../../cataloges/eBOSS/eBOSS_QSO_clustering_random-NGC-vDR16.fits'
-      - '../../cataloges/eBOSS/eBOSS_QSO_clustering_random-SGC-vDR16.fits'
-    z_edges: [0.0, 1.5]
-    path_rerun: '../reruns/eBOSS/'
-    mask_name: 'mask_QSO_0'
-    mapper_class: 'MappereBOSS'
-    bias: 2.1
-
-  SDSS__QSO1:
-    SDSS_name: 'QSO_1'
-    data_catalogs:
-      - '../../cataloges/eBOSS/eBOSS_QSO_clustering_data-NGC-vDR16.fits'
-      - '../../cataloges/eBOSS/eBOSS_QSO_clustering_data-SGC-vDR16.fits'
-    random_catalogs:
-      - '../../cataloges/eBOSS/eBOSS_QSO_clustering_random-NGC-vDR16.fits'
-      - '../../cataloges/eBOSS/eBOSS_QSO_clustering_random-SGC-vDR16.fits'
-    path_lite: '../runs/eBOSS/'
-    z_edges: [1.5, 4]
-    mask_name: 'mask_QSO_1'
-    mapper_class: 'MappereBOSS'
-    bias: 2.5
-    num_z_bins: 50
-    nside_mask: 512
-    nside: 512
-    coords: 'C'
-    nside_nl_threshold: 2048
-    lmin_nl_from_data: 2000
-    
-
-cls:
-  default: 'All'
-  #file: 'input/cl_matrix.npz'
-
-bpw_edges: [0, 30, 60, 90, 120, 150, 180, 210, 240, 272, 309, 351, 398, 452, 513, 582, 661, 750, 852, 967, 1098, 1247, 1416, 1536] 
-
-cov:
-  fiducial:
-    cosmo:
-      # Planck 2018: Table 2 of 1807.06209
-      # Omega_m: 0.3133
-      Omega_c: 0.2640
-      Omega_b: 0.0493
-      h: 0.6736
-      n_s: 0.9649
-      sigma8: 0.8111
-
-  cls_from_data: 'all'
-
-toeplitz:
-  cls:
-    l_toeplitz: -1
-    l_exact: -1
-    dl_band: -1
-  cov:
-    l_toeplitz: -1
-    l_exact: -1
-    dl_band: -1
-
-sphere:
-  n_iter_sht: 0
-  n_iter_mcm: 3
-  n_iter_cmcm: 3
-  nside: 512
-  spin0_cov: True
-  coords: 'C'
-
-recompute:
-  cls: False
-  cov: False
-  mcm: False
-  cmcm: False
-
-output:  '../reruns/eBOSS/'
+SDSS_name: 'QSO_0'
+num_z_bins: 50
+nside_mask: 512
+nside_nl_threshold: 4096
+lmin_nl_from_data: 2000
+data_catalogs:
+  - '../../cataloges/eBOSS/eBOSS_QSO_clustering_data-NGC-vDR16.fits'
+  - '../../cataloges/eBOSS/eBOSS_QSO_clustering_data-SGC-vDR16.fits'
+random_catalogs:
+  - '../../cataloges/eBOSS/eBOSS_QSO_clustering_random-NGC-vDR16.fits'
+  - '../../cataloges/eBOSS/eBOSS_QSO_clustering_random-SGC-vDR16.fits'
+z_edges: [0.0, 1.5]
+path_rerun: '../reruns/'
+mask_name: 'mask_QSO_0'
+mapper_class: 'MappereBOSS'
+bias: 2.1

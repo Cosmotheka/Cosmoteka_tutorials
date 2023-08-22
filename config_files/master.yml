@@ -1,0 +1,54 @@
+tracers:
+  #BOSS
+  SDSS__CMASS: !include ../config_files/BOSS/CMASS.yml
+  SDSS__LOWZ: !include ../config_files/BOSS/LOWZ.yml
+  #eBOSS
+  SDSS__QSO0: !include ../config_files/eBOSS/ELG.yml
+  SDSS__QSO1: !include ../config_files/eBOSS/QSO_1.yml
+  SDSS__LRG: !include ../config_files/eBOSS/LRG.yml
+  SDSS__ELG: !include ../config_files/eBOSS/ELG.yml
+    
+cls:
+  default: 'All'
+  #file: 'input/cl_matrix.npz'
+
+bpw_edges: [0, 30, 60, 90, 120, 150, 180, 210, 240, 272, 309, 351, 398, 452, 513, 582, 661, 750, 852, 967, 1098, 1247, 1416, 1536] 
+
+cov:
+  fiducial:
+    cosmo:
+      # Planck 2018: Table 2 of 1807.06209
+      # Omega_m: 0.3133
+      Omega_c: 0.2640
+      Omega_b: 0.0493
+      h: 0.6736
+      n_s: 0.9649
+      sigma8: 0.8111
+
+  cls_from_data: 'all'
+
+toeplitz:
+  cls:
+    l_toeplitz: -1
+    l_exact: -1
+    dl_band: -1
+  cov:
+    l_toeplitz: -1
+    l_exact: -1
+    dl_band: -1
+
+sphere:
+  n_iter_sht: 0
+  n_iter_mcm: 3
+  n_iter_cmcm: 3
+  nside: 512
+  spin0_cov: True
+  coords: 'C'
+
+recompute:
+  cls: False
+  cov: False
+  mcm: False
+  cmcm: False
+
+output:  '../reruns/'

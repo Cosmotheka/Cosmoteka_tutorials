@@ -1,18 +1,16 @@
 SDSS_name: 'QSO_1'
+num_z_bins: 50
+nside_mask: 512
+nside_nl_threshold: 4096
+lmin_nl_from_data: 2000
 data_catalogs:
   - '../../cataloges/eBOSS/eBOSS_QSO_clustering_data-NGC-vDR16.fits'
   - '../../cataloges/eBOSS/eBOSS_QSO_clustering_data-SGC-vDR16.fits'
 random_catalogs:
   - '../../cataloges/eBOSS/eBOSS_QSO_clustering_random-NGC-vDR16.fits'
   - '../../cataloges/eBOSS/eBOSS_QSO_clustering_random-SGC-vDR16.fits'
-path_lite: '../runs/eBOSS/'
-z_edges: [1.5, 4]
+z_edges: [1.5, 4.0]
+path_rerun: '../reruns/'
 mask_name: 'mask_QSO_1'
 mapper_class: 'MappereBOSS'
 bias: 2.5
-num_z_bins: 50
-nside_mask: 512
-nside: 512
-coords: 'C'
-nside_nl_threshold: 2048
-lmin_nl_from_data: 2000
