@@ -3,7 +3,7 @@ tracers:
   SDSS__CMASS: !include ../config_files/BOSS/CMASS.yml
   SDSS__LOWZ: !include ../config_files/BOSS/LOWZ.yml
   #eBOSS
-  SDSS__QSO0: !include ../config_files/eBOSS/ELG.yml
+  SDSS__QSO0: !include ../config_files/eBOSS/QSO_0.yml
   SDSS__QSO1: !include ../config_files/eBOSS/QSO_1.yml
   SDSS__LRG: !include ../config_files/eBOSS/LRG.yml
   SDSS__ELG: !include ../config_files/eBOSS/ELG.yml
