@@ -7,6 +7,17 @@ tracers:
   SDSS__QSO1: !include ../config_files/eBOSS/QSO_1.yml
   SDSS__LRG: !include ../config_files/eBOSS/LRG.yml
   SDSS__ELG: !include ../config_files/eBOSS/ELG.yml
+  #DESY1gc
+  DESY1gc__0: !include ../config_files/DESY1gc/DESY1gc__0.yml
+  DESY1gc__1: !include ../config_files/DESY1gc/DESY1gc__1.yml
+  DESY1gc__2: !include ../config_files/DESY1gc/DESY1gc__2.yml
+  DESY1gc__3: !include ../config_files/DESY1gc/DESY1gc__3.yml
+  DESY1gc__4: !include ../config_files/DESY1gc/DESY1gc__4.yml
+  #DESY1wl
+  DESY1wl__0: !include ../config_files/DESY1wl/DESY1wl__0.yml
+  DESY1wl__1: !include ../config_files/DESY1wl/DESY1wl__1.yml
+  DESY1wl__2: !include ../config_files/DESY1wl/DESY1wl__2.yml
+  DESY1wl__3: !include ../config_files/DESY1wl/DESY1wl__3.yml
     
 cls:
   default: 'All'
