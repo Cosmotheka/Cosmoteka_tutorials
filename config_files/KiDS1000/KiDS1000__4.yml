@@ -1,10 +1,10 @@
 mapper_class: MapperKiDS1000
-data_catalog: ../../cataloges/KiDS1000/KiDS_DR4.1_ugriZYJHKs_SOM_gold_WL_cat.fits
+data_catalog: ../../cataloges/KiDS1000/xcell_reruns/KiDS1000_cat_bin4.fits
 file_nz: ../../cataloges/KiDS1000/SOM_N_of_Z/K1000_NS_V1.0.0A_ugriZYJHKs_photoz_SG_mask_LF_svn_309c_2Dbins_v2_SOMcols_Fid_blindC_TOMO1_Nz.asc
 mode: "shear"
 zbin: "4"
 mask_name: "mask_KiDS1000__4"
-path_rerun: '/mnt/extraspace/damonge/Datasets/KiDS1000/xcell_runs'
+path_rerun: '../reruns'
 beam_info: 
   - type: 'PixWin'
 m: 0
