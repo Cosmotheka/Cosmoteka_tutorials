@@ -1,0 +1,8 @@
+mapper_class: MapperP18CMBK
+file_klm: /home/jaimerz/PhD/cataloges/Planck_lensing/Lensing2018/MV/dat_klm.fits
+file_mask: /home/jaimerz/PhD/cataloges/Planck_lensing/Lensing2018/mask.fits.gz
+file_noise: /home/jaimerz/PhD/cataloges/Planck_lensing/Lensing2018/MV/nlkk.dat 
+mask_aposize: 0.2
+mask_apotype: 'C1'
+mask_name: mask_P18kappa
+path_rerun: '../reruns'
