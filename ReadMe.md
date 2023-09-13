@@ -7,8 +7,12 @@
 | Mapper         | Description | Science  |  Cataloge |   
 | -----------    | ----------- | -------- |  -------- |
 | ```2MPZ```     |             |          |           |
-| ```ACTCMB```   |             |          |           |
-| ```ACTk```     |             |          |           |
+| ```ACTtSZ BN```   |             |  [Madhavacheril et al, 2019](https://arxiv.org/abs/1911.05717)       | [cataloge](https://lambda.gsfc.nasa.gov/product/act/act_dr4_derived_maps_get.html)            |
+| ```ACTtSZ D56```  |             |  [Madhavacheril et al, 2019](https://arxiv.org/abs/1911.05717)        | [cataloge](https://lambda.gsfc.nasa.gov/product/act/act_dr4_derived_maps_get.html)         |
+| ```ACTCMB BN```   |             |  [Madhavacheril et al, 2019](https://arxiv.org/abs/1911.05717)        | [cataloge](https://lambda.gsfc.nasa.gov/product/act/act_dr4_derived_maps_get.html)            |
+| ```ACTCMB D56```  |             |  [Madhavacheril et al, 2019](https://arxiv.org/abs/1911.05717)        | [cataloge](https://lambda.gsfc.nasa.gov/product/act/act_dr4_derived_maps_get.html)          |
+| ```ACTk BN```     |             |  [Darwish et al, 2020](https://arxiv.org/abs/2004.01139)        | [cataloge](https://lambda.gsfc.nasa.gov/product/act/act_dr4_derived_maps_get.html)            |
+| ```ACTk D56```    |             |  [Darwish et al, 2020](https://arxiv.org/abs/2004.01139)        | [cataloge](https://lambda.gsfc.nasa.gov/product/act/act_dr4_derived_maps_get.html)          |
 | ```BOSS```     |  x          | [Alam et al, 2016](https://arxiv.org/abs/1607.03155)        | [cataloge](https://data.sdss.org/sas/dr12/boss/)                                                 |
 | ```CIBLenz```  |  ~          | [Lenz et al, 2019](https://arxiv.org/abs/1905.00426)        | [cataloge](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/8A1SR3)             |
 | ```CatWISE```  |             |          |           |
