@@ -4,26 +4,26 @@
 
 ## Supported Mappers
 
-| Mapper      | Description   | Reference 
-| ----------- | ----------- | ----------- 
-| ```2MPZ```    |   |
-| ```ACTCMB```    |   |
-| ```ACTk```   |   |
-| ```BOSS```  |  |
-| ```CIBLenz```  |   |
-| ```CatWISE```   |    |
-| ```DELS``` |     |
-| ```DESY1gc``` |     |
-| ```DESY1wl``` |     |
-| ```DESY3wl``` |     |
-| ```eBOSS``` |     |
-| ```HSC_DR1wl``` |     |
-| ```KV450``` |     |
-| ```KiDS1000``` |     |
-| ```NVSS``` |     |
-| ```P15tSZ``` |     |
-| ```P18CMBk``` |     |
-| ```P18SMICA``` |     |
-| ```ROSAT``` |     |
-| ```SPT``` |     |
-| ```WIxSC``` |     |
+| Mapper         | Description | Reference 
+| -----------    | ----------- | ----------- 
+| ```2MPZ```     |             |
+| ```ACTCMB```   |             |
+| ```ACTk```     |             |
+| ```BOSS```     |             |
+| ```CIBLenz```  |             | 
+| ```CatWISE```  |             |
+| ```DELS```     |             |
+| ```DESY1gc```  |             |
+| ```DESY1wl```  |             |
+| ```DESY3wl```  |             |
+| ```eBOSS```    |             | 
+| ```HSC_DR1wl```|             |
+| ```KV450```    |             |
+| ```KiDS1000``` |             |
+| ```NVSS```     |             |
+| ```P15tSZ```   |             |
+| ```P18CMBk```  |             |
+| ```P18SMICA``` |             |
+| ```ROSAT```    |             |
+| ```SPT```      |             |
+| ```WIxSC```    |             |
