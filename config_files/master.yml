@@ -25,13 +25,13 @@ tracers:
   KiDS1000__3: !include ../config_files/KiDS1000/KiDS1000__3.yml
   KiDS1000__4: !include ../config_files/KiDS1000/KiDS1000__3.yml
   #Planck
-  Planck__CMB18: !include ../config_files/Planck/Planck__CMB18.yml
+  Planck__CMB18:   !include ../config_files/Planck/Planck__CMB18.yml
   Planck__kappa18: !include ../config_files/Planck/Planck__kappa18.yml
-  Planck__tSZ15: !include ../config_files/Planck/Planck__tSZ15.yml
+  Planck__tSZ15:   !include ../config_files/Planck/Planck__tSZ15.yml
   #LenzCIB
-  CIBLenz__353: !include ../config_files/Planck/CIBLenz__353.yml
-  CIBLenz__545: !include ../config_files/Planck/CIBLenz__545.yml
-  CIBLenz__857: !include ../config_files/Planck/CIBLenz__857.yml
+  CIBLenz__353: !include ../config_files/CIBLenz/CIBLenz__353.yml
+  CIBLenz__545: !include ../config_files/CIBLenz/CIBLenz__545.yml
+  CIBLenz__857: !include ../config_files/CIBLenz/CIBLenz__857.yml
     
 cls:
   default: 'All'

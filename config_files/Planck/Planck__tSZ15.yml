@@ -8,4 +8,4 @@ beam_info:
   - type: 'Gaussian'
     FWHM_arcmin: 10.0
 mask_name: mask_P15tSZ
-path_rerun: '../reruns'
+path_rerun: '../reruns/'

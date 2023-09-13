@@ -10,6 +10,6 @@ beam_info:
     field: 'Wl_eff'
   - type: 'PixWin'
     nside_native: 2048
-    nside_wanted: 4096
+    nside_wanted: 512
 mask_name: mask_CIB_Lenz_857 
-path_rerun: '../reruns'
+path_rerun: '../reruns/'

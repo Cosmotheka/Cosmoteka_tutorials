@@ -10,4 +10,4 @@ beam_info:
 gp_mask_mode: '0.6'
 ps_mask_mode: ['F100', 'F143', 'F217', 'F353']
 mask_name: mask_P18SMICA
-path_rerun: '../reruns'
+path_rerun: '../reruns/'
