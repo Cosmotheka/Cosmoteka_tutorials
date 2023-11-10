@@ -32,6 +32,9 @@ tracers:
   CIBLenz__353: !include ../config_files/CIBLenz/CIBLenz__353.yml
   CIBLenz__545: !include ../config_files/CIBLenz/CIBLenz__545.yml
   CIBLenz__857: !include ../config_files/CIBLenz/CIBLenz__857.yml
+  #ROSAT
+  ROSAT: !include ../config_files/ROSAT/ROSAT.yml
+
     
 cls:
   default: 'All'
