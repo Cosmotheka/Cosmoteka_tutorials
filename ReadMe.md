@@ -21,5 +21,6 @@ Cosmoteka overcomes the first issue by adopting a nested structure. In order to 
 | ```_get_beam()```        | Redirects MapperBase to the specific Mapper method to compute the beam from the catalog or otherwise.                                                          |
 | ```get_nmt_signal()```   | If the Mapper ```NaMaster``` field is not ```None```, returns it. Else, asks ```_get_nmt_signal()``` to compute it.                                            |
 | ```_get_nmt_signal()```  | Calls  ```get_signal_map()```,  ```get_mask()``` and  ```get_beam()``` to obtain the Mapper's signal map, mask and beam respectively. Then it passes them on to  ```Namaster``` to compute the field. |
-
+| ```get_ell()```          | Get l range for the mapper's power spectrum given the desired configuration.                                                                                   |
+| ```get_nl_coupled()```   | Returns the coupled noise power spectrum of the mapper if computed from the catalog.                                                                           |
 Concerning the second challenge, Cosmoteka generates a series of rerun files when the mappers are processed for the first time (for a specific resolution and set of coordinates). These reruns files are named following a convention that allows Cosmoteka to fetch them in the future. These files contain the processed ```NaMaster``` field, map signal, mask and beam such that the catalog is not loaded into memory again.
