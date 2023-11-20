@@ -7,7 +7,9 @@ The purpose of Cosmoteka's mappers is to compute ```Namaster``` fields from cata
 In order to do so Cosmoteka's mappers have to overcome two challenges:
 - Be general enough such that they can be inter-operable yet tailor to the catalog's specific needs.
 - Manage the large RAM memory usage required to load in and process mordern day catalogs.
+
 Cosmoteka overcomes the first issue by adopting a nested structure. ```MappeBase``` acts as the basis of all other mappers in Cosmoteka. As the parent class, `mapper_base` defines a series of default methods which are then overwritten by the child mappers to perform the data processing specific to each data set. In order to do so, Cosmoteka exploits the Object oriented philosphy of the python language to create a series of mapper classes which are subordinate to one another. A listing of the methods can be found below:
+
 | Function                 | Description                                                                                                                                                    |
 | -----------              | :-----------                                                                                                                                                   |
 | ```_get_defaults()```    | Reads the configuration file to obtain the desire resolution and coordinates. Initialises the ```NaMaster``` field, signal map, mask and beam as ```None```.   |
