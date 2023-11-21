@@ -3,6 +3,8 @@
 <p align="center"> Tutorials for the Cosmoteka mappers </p>
 
 ## Mappers
+![](https://raw.githubusercontent.com/JaimeRZP/Cosmoteka_tutorials/master/docs/src/assets/cosmoteka_tutorials_diagram.png)
+
 The purpose of Cosmoteka's mappers is to compute cosmological maps (```Namaster``` fields) from catalogs such that they can be cross- and auto-correlated.
 In order to do so Cosmoteka's mappers have to overcome two challenges:
 - Be general enough such that they can be inter-operable while being tailored to the catalog's specific needs.
