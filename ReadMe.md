@@ -24,4 +24,6 @@ Cosmoteka overcomes the first issue by adopting a nested structure. In order to 
 | ```get_ell()```          | Get l range for the mapper's power spectrum given the desired configuration.                                                                                   |
 | ```get_nl_coupled()```   | Returns the coupled noise power spectrum of the mapper if computed from the catalog.                                                                           |
 
+Cosmoteka's answer to the second challenge is two fold. First Cosmoteka distinguishes between public and private methods. Public methods check the values 
+
 Concerning the second challenge, Cosmoteka generates a series of rerun files when the mappers are processed for the first time (for a specific resolution and set of coordinates). These reruns files are named following a convention that allows Cosmoteka to fetch them in the future. These files contain the processed catalog, ```NaMaster``` field, map signal, mask and beam such that the full catalog is not loaded into memory again.
