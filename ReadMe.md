@@ -5,12 +5,9 @@
 ## Mappers
 ![](https://raw.githubusercontent.com/JaimeRZP/Cosmoteka_tutorials/master/docs/src/assets/cosmoteka_tutorials_diagram.png)
 
-The purpose of Cosmoteka's mappers is to compute cosmological maps (```Namaster``` fields) from catalogs such that they can be cross- and auto-correlated.
-In order to do so Cosmoteka's mappers have to overcome two challenges:
-- Be general enough such that they can be inter-operable while being tailored to the catalog's specific needs.
-- Manage the large RAM memory usage (up to 100Gbs) required to load and process mordern day catalogs.
+The purpose of Cosmoteka is to turn cosmological catalogs into consitently combined angular power spectrum with an accurate covariance matrix. In order to do so, Cosmoteka is equipped with a series of 'Mapper' modules whose role is to extract the signal map nad its noise properties from a given catalog. Then, these maps and noise properties can be passed on to angular power spectrum module to compute the corresponding angular power spectra and their covariance matrix. 
 
-Cosmoteka overcomes the first issue by adopting a nested structure. In order to do so Cosmoteka exploits the object oriented nature of the Python language to create a series of mapper classes which are subordinated to one another. ```MappeBase``` acts as the basis of all other mappers in Cosmoteka. As the parent class, ```MapperBase``` defines a series of public methods, common to all individual mappers. Moreover, it defines a series of private methods which are then overwritten by the child mappers to perform the data processing specific to each data set. A listing of the methods can be found below:
+To succesfully accomplish this Cosmoteka's mappers must be general enough such that they remain inter-operable while being tailored to the catalog's specific needs. Cosmoteka achieves this by adopting a nested structure. Cosmoteka exploits the object oriented nature of the Python language to create a series of mapper classes which are subordinated to one another. ```MappeBase``` acts as the basis of all other mappers in Cosmoteka. As the parent class, ```MapperBase``` defines the methods common to all individual mappers. Moreover, it also defines a series of abstract methods which are then overwritten by the child mappers to perform the data processing specific to each data set. A listing of the methods can be found below:
 
 | Function                 | Description                                                                                                                                                    |
 | -----------              | :-----------                                                                                                                                                   |
@@ -26,6 +23,4 @@ Cosmoteka overcomes the first issue by adopting a nested structure. In order to 
 | ```get_ell()```          | Get l range for the mapper's power spectrum given the desired configuration.                                                                                   |
 | ```get_nl_coupled()```   | Returns the coupled noise power spectrum of the mapper if computed from the catalog.                                                                           |
 
-Cosmoteka's answer to the second challenge is two fold. First Cosmoteka distinguishes between public and private methods. Public methods check the values 
-
-Concerning the second challenge, Cosmoteka generates a series of rerun files when the mappers are processed for the first time (for a specific resolution and set of coordinates). These reruns files are named following a convention that allows Cosmoteka to fetch them in the future. These files contain the processed catalog, ```NaMaster``` field, map signal, mask and beam such that the full catalog is not loaded into memory again.
+In addition to this, Cosmoteka must manage the large RAM memory usage (up to 100Gbs) required to load and process mordern day catalogs. Cosmoteka caches all its computations as objects of its mapper classes such that they can be accessed later on without the need of recomputing. Moreover, Cosmoteka generates and saves light versions of the catalogs in processes such that the full catalog is not loaded into memory again.
