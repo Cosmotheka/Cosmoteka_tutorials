@@ -1,6 +1,4 @@
 # Cosmotheka Tutorials
-<p align="center"> Tutorials for the Cosmoteka mappers </p>
-
 ## Mappers
 ### The Challenge
 ![](https://raw.githubusercontent.com/JaimeRZP/Cosmoteka_tutorials/master/docs/src/assets/cosmoteka_tutorials_diagram.png)
