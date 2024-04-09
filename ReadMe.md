@@ -1,5 +1,4 @@
-# Cosmoteka Tutorials
-![](https://raw.githubusercontent.com/JaimeRZP/Cosmoteka_tutorials/master/docs/src/assets/cosmoteka_logo.png)
+# Cosmotheka Tutorials
 <p align="center"> Tutorials for the Cosmoteka mappers </p>
 
 ## Mappers
