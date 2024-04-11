@@ -2,11 +2,10 @@
 import sys
 # insert at 1, 0 is the script path (or '' in REPL)
 
-sys.path.insert(1, '/mnt/zfsusers/jaimerz/PhD/xCell')
+sys.path.insert(1, '/mnt/zfsusers/jaimerz/PhD/Cosmotheka')
 
-from xcell.mappers import MapperSPT
-
-from xcell.mappers import utils
+from cosmotheka.mappers import MapperSPT
+from cosmotheka.mappers import utils
 from astropy.io import fits
 from astropy.table import Table
 import pyccl as ccl
@@ -21,7 +20,7 @@ bands = nmt.NmtBin(nside, nlb=60)
 ell_arr = bands.get_effective_ells()
 
 
-path_SPT = '/mnt/zfsusers/jaimerz/PhD/xCell/data/SPT/sptsz_planck_ymap_healpix/'
+path_SPT = '/mnt/zfsusers/jaimerz/PhD/Cosmotheka/data/SPT/sptsz_planck_ymap_healpix/'
 SPT_c =  {'file_map': path_SPT+'SPTSZ_Planck_min_variance_ymap.fits', 
           'file_hm1': path_SPT+'SPTSZ_Planck_min_variance_ymap_half1.fits',
           'file_hm2': path_SPT+'SPTSZ_Planck_min_variance_ymap_half2.fits',

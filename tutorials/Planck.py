@@ -2,15 +2,15 @@
 import sys
 # insert at 1, 0 is the script path (or '' in REPL)
 
-sys.path.insert(1, '/mnt/zfsusers/jaimerz/PhD/xCell')
+sys.path.insert(1, '/mnt/zfsusers/jaimerz/PhD/Cosmotheka')
 
-from xcell.mappers import MapperP15tSZ
-from xcell.mappers import MapperP15CIB
-from xcell.mappers import MapperLenzCIB
-from xcell.mappers import MapperP18SMICA
-from xcell.mappers import MapperP18CMBK
+from cosmotheka.mappers import MapperP15tSZ
+from cosmotheka.mappers import MapperP15CIB
+from cosmotheka.mappers import MapperLenzCIB
+from cosmotheka.mappers import MapperP18SMICA
+from cosmotheka.mappers import MapperP18CMBK
 
-from xcell.mappers import utils
+from cosmotheka.mappers import utils
 from astropy.io import fits
 from astropy.table import Table
 import pyccl as ccl
@@ -24,8 +24,8 @@ nside = 2048
 bands = nmt.NmtBin(nside, nlb=60)
 ell_arr = bands.get_effective_ells()
 
-path_CIB = '/mnt/zfsusers/jaimerz/PhD/xCell/data/P18/CIB/'
-path_CIB_Lenz = '/mnt/zfsusers/jaimerz/PhD/xCell/data/P18/CIB_Lenz/'
+path_CIB = '/mnt/zfsusers/jaimerz/PhD/Cosmotheka/data/P18/CIB/'
+path_CIB_Lenz = '/mnt/zfsusers/jaimerz/PhD/Cosmotheka/data/P18/CIB_Lenz/'
 CIB_c = {'file_map': path_CIB+'COM_CompMap_CIB-GNILC-F545_2048_R2.00.fits',
          'file_hm1': path_CIB+'COM_CMB_IQU-nilc_2048_R3.00_hm1.fits', 
          'file_hm2': path_CIB+'COM_CMB_IQU-nilc_2048_R3.00_hm2.fits',
@@ -56,9 +56,9 @@ CIB_Lenz_b_c = {'file_map': path_CIB_Lenz+'cib_fullmission.hpx.fits',
          'nside': nside, 
          'beam_info': {'type': 'Gaussian', 
                        'FWHM_arcmin': 5.0}}
-path = '/mnt/zfsusers/jaimerz/PhD/xCell/'
-c_test = {'file_map': path+'xcell/tests/data/map.fits',
-        'file_mask': path+'xcell/tests/data/map.fits',
+path = '/mnt/zfsusers/jaimerz/PhD/Cosmotheka/'
+c_test = {'file_map': path+'Cosmotheka/tests/data/map.fits',
+        'file_mask': path+'Cosmotheka/tests/data/map.fits',
         'nside': 32}
 
 CIBlenz_mapper = MapperP15CIB(CIB_Lenz_c)
