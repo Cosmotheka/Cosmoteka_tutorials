@@ -18,6 +18,11 @@ tracers:
   DESY1wl__1: !include ../config_files/DESY1wl/DESY1wl__1.yml
   DESY1wl__2: !include ../config_files/DESY1wl/DESY1wl__2.yml
   DESY1wl__3: !include ../config_files/DESY1wl/DESY1wl__3.yml
+  #HSCDR1wl
+  HSCDR1wl__0: !include ../config_files/HSCDR1wl/HSCDR1wl__0.yml
+  HSCDR1wl__1: !include ../config_files/HSCDR1wl/HSCDR1wl__1.yml
+  HSCDR1wl__2: !include ../config_files/HSCDR1wl/HSCDR1wl__2.yml
+  HSCDR1wl__3: !include ../config_files/HSCDR1wl/HSCDR1wl__3.yml
   #KiDS1000
   KiDS1000__0: !include ../config_files/KiDS1000/KiDS1000__0.yml
   KiDS1000__1: !include ../config_files/KiDS1000/KiDS1000__1.yml
